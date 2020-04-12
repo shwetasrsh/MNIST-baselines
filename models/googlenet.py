@@ -101,11 +101,3 @@ class GoogLeNet(nn.Module):
         out = self.linear2(out)
         return out
 
-def test():
-    net = GoogLeNet()
-    x = torch.randn(1,1,45,45)
-    y = net(Variable(x))
-    print(y.size())
-
-if __name__ == '__main__':
-    test()
